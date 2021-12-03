@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+:root {
+  --primary-color: hsl(215, 51%, 70%);
+  --very-dark-blue: hsl(216, 50%, 16%);
+  --dark-blue: hsl(217, 54%, 11%);
+  --cyan: hsl(178, 100%, 50%);
+  --text: hsl(215, 51%, 70%);
+}
+
+.home {
+  background: var(--dark-blue);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.composant {
+  background: var(--very-dark-blue);
+  height: 700px;
+  width: 400px;
+  padding: 25px;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 5 0px 30px rgba(2, 17, 39, 0.815);
+}
+
+.contain-card {
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top-card {
+  background: url("../images/image-equilibrium.jpg") center no-repeat;
+  background-size: cover;
+  border-radius: 5%;
+  height: 350px;
+  width: 100%;
+}
+
+.top-card:hover .overlay {
+  opacity: 0.7;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 350px;
+  border-radius: 5%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: var(--cyan);
+  cursor: pointer;
+}
+
+.medium-card {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.medium-card .title-text a {
+  font-size: 26px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.medium-card .title-text a:hover {
+  color: var(--cyan);
+  transition: 0.5s ease-in;
+}
+.medium-card .desc-text p {
+  color: var(--text);
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.text-med_card {
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.more-text {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.more-text .eth {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90px;
+}
+.more-text .eth p {
+  color: var(--cyan);
+  font-weight: 400;
+}
+.more-text .day-left {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95px;
+}
+.more-text .day-left p {
+  color: var(--text);
+}
+
+.line {
+  border-bottom: solid 1px var(--text);
+  width: 100%;
+  height: 20px;
+}
+
+.bottom-card {
+  height: 60px;
+  width: 100%;
+  display: flex;
+}
+
+.bottum-contain {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 70%;
+}
+
+.avatar {
+  background: url("../images/image-avatar.png") center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border: solid 1px #fff;
+  height: 40px;
+  width: 40px;
+}
+
+.bottum-creation a {
+  text-decoration: none;
+  color: var(--text);
+}
+.bottum-creation a span {
+  color: #fff;
+}
+.bottum-creation a:hover span {
+  color: var(--cyan);
+  transition: 0.5s ease;
+}
+
+/*# sourceMappingURL=style.css.map */
